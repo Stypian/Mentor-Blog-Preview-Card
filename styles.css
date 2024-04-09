@@ -1,0 +1,125 @@
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+.blog-prev {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-prev__bg {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255,208,78);
+}
+
+.blog-prev__main-cont {
+    width: 335px;
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    border: solid #000 1px;
+    box-shadow: 7px 7px rgba(0,0,0,1);
+    pointer-events: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Figtree';
+    transition: all 200ms ease-in-out;
+}
+
+.blog-prev__main-cont:hover {
+    box-shadow: 16px 16px rgba(0,0,0,1);
+    transition: all 200ms ease-in-out;
+}
+
+.blog-prev__main-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 40%;
+}
+
+.blog-prev__desc {
+    font-size: clamp(.9rem, 3.9vw, 1rem);
+    line-height: 1.5;
+    color: hsl(0, 0%, 50%);
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+
+.blog-prev__button {
+    align-self: flex-start;
+    background-color: rgb(255,208,78);
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: inherit;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.blog-prev__date {
+    align-self: flex-start;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.blog-prev__heading {
+    align-self: flex-start;
+    font-weight: 900;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: color 200ms;
+    pointer-events: auto;
+}
+
+.blog-prev__heading:hover {
+    color: rgb(255,208,78);
+    transition: color 200ms ease-in-out;
+}
+
+.blog-prev__icon-cont {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 900;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.blog-prev__pic {
+    transform: scale(.5);
+    margin-left: -16px;
+}
+
+.blog-prev__user-name {
+    margin-left: -2px;
+}
+
+@media screen and (max-width: 380px) {
+    .blog-prev__main-cont {
+        width: 285px;
+    }
+
+}
